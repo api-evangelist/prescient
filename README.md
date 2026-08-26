@@ -64,5 +64,18 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Prescient is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/prescient_stock/
+Prescient Co. Inc. was a United States construction-technology and manufacturing company that sold an
+integrated design, engineering, manufacturing and assembly platform for multi-unit buildings —
+apartments, condominiums, student and military dormitories, hotels and senior-living communities —
+built on its patented Unified Truss Construction System (UTCS) light-gauge steel framing. Founded in
+2012 and headquartered in North Carolina, with plants in Mebane, NC and Arvada, CO, the company wound
+down after an August 2023 Colorado WARN filing that stated the company would be closed once the Arvada
+shutdown was complete.
+
+**Prescient never published a public API, SDK, webhook surface, or machine-readable specification**, and
+`prescientco.com` no longer belongs to the company — it redirects to an unrelated site. This profile is
+retained as a historical record. See `well-known/prescient-well-known.yml` for the probe record and
+`apis.yml` `x-coverage` for why this profile is thin.
+
+- Forge Global listing (third-party venue, not a company site): https://forgeglobal.com/prescient_stock/
+- EquityZen listing (third-party venue, not a company site): https://equityzen.com/company/prescient/

@@ -1,0 +1,99 @@
+generated: '2026-08-26'
+method: probed
+source: https://prescientco.com/
+name: Prescient — well-known probe
+description: >-
+  Probe of the /.well-known/ surface and the common machine-readable contract paths on
+  prescientco.com, the domain Prescient Co. Inc. published its website from while it was
+  operating. NOTHING WAS SERVED and NO pointer is emitted from this file — it is a record of
+  an absence, not of a presence.
+host_ownership: reassigned
+host_ownership_note: >-
+  prescientco.com is NO LONGER controlled by Prescient Co. Inc. The apex 301s to
+  https://www.mellonaid.com/ (an unrelated site), and the TLS certificate presented on
+  :443 is issued to CN=mellonaid.com with a SAN set of mellonaid.com and www.mellonaid.com
+  only — so an HTTPS request to prescientco.com fails hostname verification outright.
+  Every path below returns the mellonaid.com 404 page, a ~40.5KB HTML body that is
+  byte-length-identical for a control path that could never exist
+  (/this-path-does-not-exist-xyz9). No response from this host may be attributed to
+  Prescient, and none is: no document was captured and no artifact is derived from it.
+hosts:
+- host: prescientco.com
+  note: >-
+    Former Prescient Co. Inc. marketing site (WordPress). Now redirects off-domain; not
+    company-controlled. Probed 2026-08-26 with a browser User-Agent, TLS verification
+    disabled so the request could complete at all.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    note: mellonaid.com HTML 404 page (40522 bytes), not a document
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    note: mellonaid.com HTML 404 page (40530 bytes), not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    note: mellonaid.com HTML 404 page (40536 bytes), not a document
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    note: mellonaid.com HTML 404 page (40521 bytes), not a document
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    note: mellonaid.com HTML 404 page (40524 bytes), not a document
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+    note: mellonaid.com HTML 404 page (40525 bytes), not a document
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+    note: >-
+      Pre-0.3 A2A agent-card location also probed; mellonaid.com HTML 404 page
+      (40520 bytes), not a document
+contract_discovery:
+  performed: '2026-08-26'
+  result: no-contract-found
+  note: >-
+    STEP 0b run against the only host this company ever published from. There is no
+    apis[].baseURL and no OpenAPI servers[] host in this repo to probe, and no docs or
+    console host exists.
+  probes:
+  - url: https://prescientco.com/
+    status: 301
+    note: redirects to https://www.mellonaid.com/ — unrelated third party
+  - url: https://prescientco.com/openapi.json
+    status: 404
+  - url: https://prescientco.com/swagger.json
+    status: 404
+  - url: https://prescientco.com/api-docs
+    status: 404
+  - url: https://prescientco.com/docs
+    status: 404
+  - url: https://prescientco.com/llms.txt
+    status: 404
+  - url: https://prescientco.com/this-path-does-not-exist-xyz9
+    status: 404
+    note: control path — same 404 body shape, confirming none of the above is a real miss
+  graphql: not-probed
+  graphql_note: No /graphql surface has ever been documented or archived for this company.
+  mcp: not-probed
+  mcp_note: No MCP endpoint is published, referenced, or archived for this company.
+archive_evidence:
+  source: https://web.archive.org/cdx/search/cdx?url=prescientco.com&matchType=domain
+  fetched: '2026-08-26'
+  status: 200
+  unique_urls: 1872
+  developer_paths_found: 0
+  note: >-
+    1,872 unique archived URLs across the prescientco.com domain contain no /api/, /docs/,
+    /developers portal, swagger, openapi, or SDK path. The only matches on a "developer"
+    string are a real-estate DEVELOPER audience page (/developers/), an "ETL Developer" job
+    posting, press releases, and two WordPress button images. The only JSON surface is
+    /wp-json/oembed/1.0/embed — WordPress core's built-in oEmbed route on the marketing
+    site, not a product API. This is the strongest available evidence that no public
+    developer program ever existed, and it is a search over the whole archived history of
+    the domain rather than a probe of its present state.

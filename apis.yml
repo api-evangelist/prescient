@@ -1,23 +1,129 @@
 aid: prescient
 name: Prescient
-description: 'Prescient is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Prescient Co. Inc. was a United States construction-technology and manufacturing company
+  that sold an integrated design, engineering, manufacturing and assembly platform for
+  multi-unit buildings — apartments, condominiums, student and military dormitories, hotels
+  and senior-living communities. Its product was the patented Prescient Solution built on the
+  Unified Truss Construction System (UTCS), a light-gauge steel structural framing system
+  manufactured off-site in panelised components and assembled on-site, marketed as a faster,
+  greener and lower-cost alternative to conventional cast-in-place and wood-frame structures
+  at heights up to roughly twelve stories. The "technology" in the offering was internal
+  design-automation software that linked architectural design, structural engineering,
+  factory manufacturing and field assembly into one digital model; it was delivered as a
+  design-build service to real-estate developers and general contractors, never as a product
+  a third party could integrate with. Founded in 2012 (some sources list 2013) and
+  headquartered in North Carolina — Charlotte, later Durham — with manufacturing in Mebane,
+  North Carolina and Arvada, Colorado, the company raised a large private round stack
+  including a $40M Series D and a Series E led by Eldridge Industries at a reported $650M
+  valuation; publicly reported lifetime totals disagree, with EquityZen listing $103M and
+  Crunchbase reporting roughly $375M through Series G. The company contracted sharply: the
+  Mebane plant closed in 2022 with 83 jobs cut, 50 Arvada jobs were cut in April 2023, and a
+  Colorado WARN notice filed on 31 August 2023 announced the permanent closure of the Arvada
+  plant and a further 60 jobs, stating that upon conclusion of the shutdown activities the
+  company would be closed. Prescient never operated a public developer program, API, SDK,
+  webhook surface or machine-readable specification, and prescientco.com has since passed out
+  of the company's control. This profile is retained as a historical record; there is no API
+  surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/prescient/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
-x-tier-reason: harvest
-specificationVersion: '0.20'
+x-tier-reason: defunct-no-api-surface
+x-status: defunct
+x-founded: '2012'
+x-headquarters: Durham, North Carolina, United States
+x-shutdown-date: '2023-08-31'
+x-shutdown-note: >-
+  Colorado WARN notice filed 31 August 2023 for the Arvada, CO plant at 14401 W. 65th Way
+  eliminated 60 jobs and stated the action was permanent and that upon conclusion of the
+  shutdown activities the company would be closed. It followed 50 Arvada layoffs in April
+  2023 and the 2022 closure of the Mebane, NC plant (83 jobs). No successor entity,
+  acquisition or restart has been found.
+x-domain-status: reassigned
+x-domain-note: >-
+  prescientco.com was the company's website while it operated and is no longer controlled by
+  Prescient. The apex now 301s to https://www.mellonaid.com/, an unrelated site, and the TLS
+  certificate served on the host is issued to CN=mellonaid.com (SANs mellonaid.com,
+  www.mellonaid.com only), so HTTPS to prescientco.com fails hostname verification. Every
+  other path returns that site's ~40.5KB HTML 404, identical in shape for a control path
+  that cannot exist. It is NOT the Prescient company site and is deliberately not wired as a
+  Website pointer. See well-known/prescient-well-known.yml for the full probe.
+x-venue-listings:
+- venue: Forge Global
+  url: https://forgeglobal.com/prescient_stock/
+  status: 403
+  note: >-
+    Secondary-market share listing, live but behind a Cloudflare bot challenge for our
+    crawler. Recorded here rather than as a common[] Website pointer: a trading-venue
+    listing page is a third party's page about the company, not the company's own web
+    presence, and wiring it as Website credits discoverability for a site that does not
+    exist (roadmap#56).
+- venue: EquityZen
+  url: https://equityzen.com/company/prescient/
+  status: 200
+  note: >-
+    Secondary-market share listing. Source of the harvest entry and of the company
+    description cross-check; not a Prescient-controlled property.
+specificationVersion: '0.23'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Defunct
+- Construction
+- Construction-Technology
+- Building-Technology
+- Prefabrication
+- Modular-Construction
+- Manufacturing
+- Real-Estate
+- Multifamily-Housing
+tags_raw:
+- Company
+- Defunct
+- Construction
+- Construction Technology
+- Building Technology
+- Prefabrication
+- Modular Construction
+- Manufacturing
+- Real Estate
+- Multifamily Housing
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-common:
-- type: Website
-  url: https://forgeglobal.com/prescient_stock/
+common: []
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Prescient Co. Inc. wound down after an August 2023 Colorado WARN filing that said the
+    company would be closed once the Arvada plant shutdown finished, and prescientco.com has
+    since been reassigned — it 301s to the unrelated www.mellonaid.com, serves that site's
+    TLS certificate, and answers every /.well-known/, /openapi.json and /llms.txt path with
+    that site's 404 — while 1,872 archived URLs spanning the domain's entire history contain
+    no API, docs, portal, swagger or SDK path, only a WordPress marketing site whose sole
+    JSON route was WordPress core's own /wp-json/oembed.
+  evidence:
+  - url: https://prescientco.com/
+    status: 301
+  - url: https://prescientco.com/openapi.json
+    status: 404
+  - url: https://prescientco.com/.well-known/agent-card.json
+    status: 404
+  - url: https://prescientco.com/llms.txt
+    status: 404
+  - url: https://web.archive.org/cdx/search/cdx?url=prescientco.com&matchType=domain
+    status: 200
+  - url: https://equityzen.com/company/prescient/
+    status: 200
+  checked: '2026-08-26'
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
