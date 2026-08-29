@@ -65,6 +65,17 @@ x-venue-listings:
   note: >-
     Secondary-market share listing. Source of the harvest entry and of the company
     description cross-check; not a Prescient-controlled property.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 specificationVersion: '0.23'
 created: '2026-08-26'
 modified: '2026-08-26'
