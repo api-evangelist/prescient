@@ -88,7 +88,7 @@ tags:
 - Prefabrication
 - Modular Construction
 - Manufacturing
-- Real-Estate
+- Real Estate
 - Multifamily Housing
 tags_raw:
 - Company
@@ -101,6 +101,7 @@ tags_raw:
 - Manufacturing
 - Real Estate
 - Multifamily Housing
+- Real-Estate
 apis: []
 maintainers:
 - FN: Kin Lane
