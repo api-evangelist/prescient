@@ -64,18 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Prescient Co. Inc. was a United States construction-technology and manufacturing company that sold an
-integrated design, engineering, manufacturing and assembly platform for multi-unit buildings —
-apartments, condominiums, student and military dormitories, hotels and senior-living communities —
-built on its patented Unified Truss Construction System (UTCS) light-gauge steel framing. Founded in
-2012 and headquartered in North Carolina, with plants in Mebane, NC and Arvada, CO, the company wound
-down after an August 2023 Colorado WARN filing that stated the company would be closed once the Arvada
-shutdown was complete.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-**Prescient never published a public API, SDK, webhook surface, or machine-readable specification**, and
-`prescientco.com` no longer belongs to the company — it redirects to an unrelated site. This profile is
-retained as a historical record. See `well-known/prescient-well-known.yml` for the probe record and
-`apis.yml` `x-coverage` for why this profile is thin.
+Prescient Co. Inc. was a United States construction-technology and manufacturing company that sold an integrated design, engineering, manufacturing and assembly platform for multi-unit buildings — apartments, condominiums, student and military dormitories, hotels and senior-living communities. Its product was the patented Prescient Solution built on the Unified Truss Construction System (UTCS), a light-gauge steel structural framing system manufactured off-site in panelised components and assembled on-site, marketed as a faster, greener and lower-cost alternative to conventional cast-in-place and wood-frame structures at heights up to roughly twelve stories. The "technology" in the offering was internal design-automation software that linked architectural design, structural engineering, factory manufacturing and field assembly into one digital model; it was delivered as a design-build service to real-estate developers and general contractors, never as a product a third party could integrate with. Founded in 2012 (some sources list 2013) and headquartered in North Carolina — Charlotte, later Durham — with manufacturing in Mebane, North Carolina and Arvada, Colorado, the company raised a large private round stack including a $40M Series D and a Series E led by Eldridge Industries at a reported $650M valuation; publicly reported lifetime totals disagree, with EquityZen listing $103M and Crunchbase reporting roughly $375M through Series G. The company contracted sharply: the Mebane plant closed in 2022 with 83 jobs cut, 50 Arvada jobs were cut in April 2023, and a Colorado WARN notice filed on 31 August 2023 announced the permanent closure of the Arvada plant and a further 60 jobs, stating that upon conclusion of the shutdown activities the company would be closed. Prescient never operated a public developer program, API, SDK, webhook surface or machine-readable specification, and prescientco.com has since passed out of the company's control. This profile is retained as a historical record; there is no API surface to enrich.
 
-- Forge Global listing (third-party venue, not a company site): https://forgeglobal.com/prescient_stock/
-- EquityZen listing (third-party venue, not a company site): https://equityzen.com/company/prescient/
+**Areas:** Company · Defunct · Construction · Construction Technology · Building Technology · Prefabrication · Modular Construction · Manufacturing · Real Estate · Multifamily Housing
+
+## Prescient on APIs.io (historical record)
+
+Everything profiled for Prescient is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/prescient/](https://apis.io/providers/prescient/)** — or go straight to one of the APIs or properties below.
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Prescient: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/prescient/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
